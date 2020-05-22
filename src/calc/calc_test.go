@@ -39,3 +39,23 @@ func TestDivZero(t *testing.T) {
 	assert.NotNil(t, err, fmt.Sprintf("Wrong div - error nil!!"))
 	assert.Equal(t, "can't work with 0", err.Error(), fmt.Sprintf("Wrong error message!!"))
 }
+
+func TestMultiOk(t *testing.T) {
+	// GIVEN
+	a := 5
+	b := 4
+	// WHEN
+	result := Multi(a, b)
+	// THEN
+	assert.Equal(t, 20, result, fmt.Sprintf("Wrong mluti!!"))
+}
+
+func TestResOk(t *testing.T) {
+	// GIVEN
+	a := 5
+	b := 4
+	// WHEN
+	result := Res(a, b)
+	// THEN
+	assert.Equal(t, 1, result, fmt.Sprintf("Wrong res!!"))
+}

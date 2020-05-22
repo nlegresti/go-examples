@@ -7,8 +7,5 @@ import (
 )
 
 func main() {
-
 	fmt.Printf("%d", calc.Sum(4, 5))
-	fmt.Println("Hola Mundo")
-
 }
